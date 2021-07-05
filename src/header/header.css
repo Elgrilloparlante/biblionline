@@ -1,0 +1,170 @@
+header{
+    height: 7em;
+    background-color: #FFFFFF;
+    background-image: url("../media/images/header7.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-y: center;
+}
+
+#links{
+    display: none;
+}
+
+nav a, button{
+    color: white;
+    font-size: 17px;
+    display: block;
+}
+
+#links a, button{
+    padding: 14px 26px;
+    text-decoration: none;
+    border-top: 1px solid #dddddd;
+	background-color: #b60d01;
+    width: 100%;
+}
+
+#links a:hover, #links button:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+#icon {
+	padding: 14px 16.5px;
+    background: black;
+    display: block;
+    position: absolute;    
+	margin-top: 64px;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+button{
+    border: none;
+    outline: none;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content button{
+    box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-content {
+    display:inline-block;
+}
+
+/*Search bar*/
+
+#search-container{
+    box-sizing: content-box;
+    background-color: white;
+    width: 100%;
+}
+
+nav input[type=text]{
+    height: 100%;
+    display: inline;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    width: 80%;
+}
+
+#search-container button{
+    display: inline;
+    box-sizing: border-box;
+    padding: 15px 18px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+@media all and (min-width: 680px){
+
+    header{
+        height: 7em;
+        background-image: url("../media/images/header7.png");
+        background-size: contain; 
+    }    
+
+    nav{
+        background-color: #b60d01;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+		height: 50px;
+    }
+
+    #icon{
+        display: none;
+		position: absolute;
+    }
+
+    nav #links{
+        display: flex;
+		white-space: nowrap;
+    }
+
+    #links{
+        display: flex;
+        border: none;
+    }
+
+    .dropdown-content{
+        width: auto;
+    }
+
+    .dropdown{
+        border:none;
+    }
+
+    /*Search bar*/
+
+    #search-container{
+        background-color:inherit;
+        display: flex;
+		flex-flow: row-reverse;
+	}
+
+    
+    nav input[type=text]{
+        height: 100%;
+        width: 100%;
+        padding: 15px 16px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+        box-shadow: none;
+    }
+    
+    #button-div{
+        display: inline-block;
+        height: 100%;
+    }
+    
+    #search-container button{
+        display: inherit;
+        background-color: #ccc;
+        border: none;
+        cursor: pointer;
+		align-items:center;
+    }
+
+	.form {
+		display: flex;
+	}
+
+}
