@@ -56,7 +56,6 @@ a{
 
     .book > a{
         padding: 1em 1em;
-        cursor: url("../media/images/cursor.png"), auto;
     }
 
 }
