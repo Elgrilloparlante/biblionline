@@ -22,7 +22,7 @@ export const Books = [
         link: ""
     },
     {
-        id: 1,
+        id: 3,
         titulo: "Teo va al parque de atracciones",
         autor: "Jeff Bezos",
         tags: "Empresariales, comedia",
@@ -31,5 +31,5 @@ export const Books = [
         formato: "PDF",
         idioma: "Castellano",
         link: ""
-    },
+    }
 ]
